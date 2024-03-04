@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BFI Finance Company Profile</title>
+</head>
+<body>
+    <header class="sticky-header">
+        <div class="container">
+            <h1>BFI Finance</h1>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#product-photo">Product</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="hamburger" onclick="tooglemenu()">&#9776;</div>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section id="about">
+            <h2>About BFI Finance</h2>
+            <p>BFI Finance adalah sebuah perusahaan pembiayaan yang memiliki tiga jenis pembiayaan. Pertama, pembiayaan modal kerja, investasi
+                dan multiguna yang ditujukan untuk kebutuhan produktif seperti modal kerja, investasi dan pengembangan usaha, maupun untuk kebutuhan
+                konsumtif seperti biaya untuk pernikahan, renovasi rumah, dan lain-lain. Kedua, pembiayaan sales dan lease back, yakni pembiayaan untuk
+                pembelian mesin dan alat berat baik baru maupun bekas untuk digunakan dalam sebuah usaha,mulai dari alat berat seperti excavator, bulldozer, crane, 
+                forklift, berbagai jenis truk. Ketiga, pembiayaan tanpa anggunan untuk kebutuhan pendidikan, perjalanan, serta pengembangan usaha mikro.</p>
+            <h2>Visi & Misi</h2>
+            <p>Visi : Menjadi mitra solusi keuangan yang terpercaya yang turut berkontribusi terhadap peningkatan taraf hidup masyarakat</p>
+            <p>Misi : 
+            <li>Menyediakan solusi keuangan yang terpercaya dan efektif kepada pelanggan kami</li>
+            <li>Mencapai tingkat pengembalian modal yang superior dan mempertahankan reputasi kami sebagai perusahaan publik terpercaya</li>
+            <li>Menyediakan lingkungan komunitas yang mendidik para pemimpin masa depan dari organisasi</li>
+            <li>Membangun hubungan kerja sama jangka panjang dengan mitra bisnis kami berdasarkan saling percaya dan menguntungkan</li>
+            <li>Memberikan kontribusi yang positif bagi masyarakat</li></p>
+        </section>
+        <section id="product-photo">
+            <h2>Product on BFI Finance</h2>
+            <div class="grid-container">
+                <div class="product-item" id="item-1">
+                    <picture>
+                        <source media="(min-width:650px)" srcset="Assets/Card-Motor.jpg">
+                        <source media="(min-width:480px)" srcset="Assets/Card-Motor.jpg">
+                        <img src="Assets/Card-Motor.jpg" alt="Product Jaminan BPKB Motor">
+                    </picture>   
+                </div>
+                <div class="product-item" id="item-2">
+                    <picture>
+                        <source media="(min-width:650px)" srcset="Assets/Card-Mobil.jpg">
+                        <source media="(min-width:480px)" srcset="Assets/Card-Mobil.jpg">
+                        <img src="Assets/Card-Mobil.jpg" alt="Product Jaminan BPKB Mobil">
+                    </picture>
+                </div>
+                <div class="product-item" id="item-3">
+                    <picture>
+                        <source media="(min-width:650px)" srcset="Assets/Card-Rumah.jpg">
+                        <source media="(min-width:480px)" srcset="Assets/Card-Rumah.jpg">
+                        <img src="Assets/Card-Rumah.jpg" alt="Product Jaminan Sertifikat Rumah">
+                    </picture>
+                </div>
+                <div class="product-item" id="item-4">
+                    <picture>
+                        <source media="(min-width:650px)" srcset="Assets/Card-Syariah.jpg">
+                        <source media="(min-width:480px)" srcset="Assets/Card-Syariah.jpg">
+                        <img src="Assets/Card-Syariah.jpg" alt="Pembiayaan Murni Dengan Akad Syariah Jaminan BPKB Mobil">
+                    </picture>
+                </div>
+            </div>
+        </section>
+        <section id="product-video">
+            <h2>Video About BFI Finance</h2>
+            <div class="flex-container">
+                <iframe
+                width="80%"
+                height="300"
+                src="https://www.youtube.com/embed/nwYtik5DRg8?si=16OQSYNk5dvxhsBo"
+                title="Youtube Video Player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                display="block"
+                allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+        <section id="form-section">
+            <h2>Untuk Pengajuan Pinjaman</h2>
+            <form action="#">
+                <fieldset>
+                    <legend>Personal Data</legend>
+                    <div>
+                        <label for="Email">Email</label>
+                        <input id="Email" type="text" required/>
+                    </div>
+                    <div>
+                        <label for="dob">Date of Birth</label>
+                        <input
+                        type="date"
+                        name="trip-start"
+                        value="2000-01-01"/>
+                    </div>
+                    <div>
+                        <p>Apakah anda tinggal di Indonesia?</p>
+                        <input type="radio" id="Ya" name="Indonesia" value="Male"/>
+                        <label for="Ya">Ya</label>
+                        <input type="radio" id="Tidak" name="Indonesia" value="Female"/>
+                        <label for="Tidak">Tidak</label>
+                    </div>
+                    <div>
+                        <p>Upload Foto KTP Untuk Verifikasi & Pengecekan BI Checking</p>
+                        <input
+                        type="file"
+                        id="photo"
+                        name="fotoktp"
+                        required
+                        accept="image/jpeg; image/png; imange/jpg">
+                    </div>
+                </fieldset>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
