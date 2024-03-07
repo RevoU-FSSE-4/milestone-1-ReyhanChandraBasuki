@@ -1,0 +1,44 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.sticky-header {
+    list-style-type: none;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    position: -webkit-sticky; 
+    position: sticky;
+    background-color: white;
+    z-index: 100;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: beige;
+}
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.nav-list li {
+    margin-right: 10px;
+}
+nav > span > img {
+    width: 50%;
+}
+.hamburger {
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+#photo >img{
+    width: 80%;
+}
+.li{
+    list-style-type: none;
+}
