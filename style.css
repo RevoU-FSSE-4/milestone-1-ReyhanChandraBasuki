@@ -2,7 +2,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px;
-    background-image: url(Assets/Nyoba.jpeg);
+    background-image: url(Assets/background.jpeg);
     background-position: center;
     background-size: cover;
 }
@@ -20,7 +20,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: beige;
+    background-color: grey;
 }
 .nav-list {
     list-style-type: none;
@@ -32,7 +32,7 @@ nav {
     margin-right: 10px;
 }
 nav > span > img {
-    width: 30%;
+    width: 35%;
 }
 .hamburger {
     font-size: 20px;
@@ -84,4 +84,60 @@ width: 25%;
     filter: none;
     transition-property: filter;
     transition-duration: 3s;
+}
+@media (min-width:601px) and (max-width:1080px){
+    .container {
+        max-width: 1080px;
+    }
+    #product-photo .grid-container {
+         grid-template-columns: repeat(2,2fr);
+    }
+}
+
+@media (min-width:385px) and (max-width:600px) {
+    .container {
+        max-width: 600px;
+    }
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: beige;
+    }
+    .nav-list li{
+        font-size:medium;
+    }
+    .nav-list li {
+    margin: 3px;
+    }
+    #product-photo .grid-container{
+        grid-template-columns: repeat(1,1fr);
+    }   
+    #product-video .flex-container {
+        max-width: 600px;
+    }
+}
+
+@media (min-width:250px) and (max-width:384px) {
+    .container {
+        max-width: 384px;
+    }
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: beige;
+    }
+    .nav-list li{
+        font-size: smaller;
+    }
+    .nav-list li {
+    margin: 1px;
+    }
+    #product-photo .grid-container{
+    grid-template-columns: repeat(1,1fr);
+    }   
+    #product-video .flex-container {
+        max-width: 384px;
+    }
 }
